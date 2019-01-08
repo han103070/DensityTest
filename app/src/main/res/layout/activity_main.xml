@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="66dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/test"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="252dp"
+        android:layout_height="356dp"
+        android:background="@drawable/info_bg1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toRightOf="@id/img_1"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toBottomOf="@id/img_2"
+        app:layout_constraintLeft_toLeftOf="@id/img_2"
+        app:layout_constraintRight_toRightOf="@id/img_2"/>
+
+    <ImageView
+        android:id="@+id/img_4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/test1"
+        app:layout_constraintTop_toBottomOf="@+id/img_3"
+        app:layout_constraintLeft_toLeftOf="@+id/img_3"
+        app:layout_constraintRight_toRightOf="@+id/img_3"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="斗开连接覅额外给卡洛斯"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_4"
+        app:layout_constraintLeft_toLeftOf="@+id/img_4"
+        app:layout_constraintRight_toRightOf="@+id/img_4"/>
+
+</android.support.constraint.ConstraintLayout>
